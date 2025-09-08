@@ -16,6 +16,13 @@ The RDPS operates in two primary modes:
 2.  **CICFlowMeter**: The online analysis component is entirely dependent on this tool. You must have it installed and running.
     -   Ensure it is configured to generate **daily CSV files**.
 3.  **Pre-trained Models**: You must acquire the three model/scaler files (`rf(Dynamic).pkl`, `XGBoost.pkl`, `XGBoost_Scaler.pkl`) and place them in the root of the project directory. *These models are not included in this repository.*
+
+ ## Models and Dataset
+
+The pre-trained machine learning models (`XGBoost.pkl`, `rf(Dynamic).pkl`) are central to this system's effectiveness.
+
+-   **Offline Model**: The Random Forest model for file scanning was trained on publicly available malware datasets and PE feature extraction techniques.
+-   **Online Model**: The XGBoost model for network analysis was trained on a **private and proprietary dataset**. This dataset is not publicly available due to its sensitive nature and is not included in this repository. Therefore, to replicate the training process for the network detector, users must provide their own labeled network flow dataset.
    
 ------------------------------------------------
 ## How to Run
