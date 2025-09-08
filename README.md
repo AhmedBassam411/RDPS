@@ -1,2 +1,2 @@
 # RDPS
-A comprehensive Ransomware Detection and Prevention System (RDPS) featuring a Flask web dashboard, real-time network traffic analysis, and static file scanning with automated quarantine capabilities.
+This project is a multi-faceted Ransomware Detection and Prevention System designed to provide a robust defense against ransomware threats. It integrates both online (network-based) and offline (host-based) detection modules into a unified, user-friendly web dashboard. The system leverages machine learning models to identify malicious patterns in real-time network flows and static file characteristics, offering automated threat quarantine and an optional active prevention protocol to block malicious connections via the system firewall.
